@@ -74,6 +74,8 @@ body{
     text-align: center;
     margin-top: 150px;
     color: white;
+
+    
 }
 .button{
     border: 3px solid white;
@@ -84,7 +86,10 @@ body{
     color: black;
     font-size: 20px;
     text-decoration: none;
+    
+    
 }
+
 .button:hover{
      background: transparent;
 }
@@ -130,6 +135,7 @@ body{
     text-align: center;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    color: rgba(54, 99, 190);
 }
 
 .stars span i{
@@ -146,10 +152,10 @@ body{
 
 
 .btn-primary-btn {
-    border: 3px solid yellow;
+    border: 3px solid rgb(238, 244, 73);
     padding: 10px 10px;
     margin-top: 40px;
-    background-color:yellow;
+    background-color:rgb(238, 244, 73);
     border-radius: 5px;
     color: black;
     font-size: 15px;
@@ -165,12 +171,19 @@ body{
 
 
 .S3{
+    width: 95%;
+    height: 100%;
     text-align: center;
 }
 .row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
+    
+    display:grid;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .campus{
     flex-basis: 32%;
@@ -178,10 +191,17 @@ body{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+   
+    padding: 20px;
+   margin-right: 50px;
+   
+
 }
 .campus img{
-    width: 100%;
+    width: 110%;
+    height: 100%;
 }
+
 .layer{
     background: transparent;
     height: 100%;
@@ -190,9 +210,10 @@ body{
     top: 0;
     left: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background:rgba(54, 99, 190);
 }
 .layer h3{
     width: 100%;
@@ -213,28 +234,73 @@ body{
 
 
 
-.S4{
-    text-align: center;
-    margin-top: 70px;
+.content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+  height: 500px;
+  margin-bottom: 70px ;
+  margin-left: 30px;
+  text-align: left;
+ 
+
+
+  
 }
-.facilities{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
+.icon-box{
+    width: 50px;
+    height: 50px;
+    padding: 5px ;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: rgba(54, 99, 190);
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
-.facilities img{
+.heading{
+    font-size: 20px;
+    color: rgba(54, 99, 190);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px ;
+    display: inline-block;
+    text-align: left;
+    
+
+}
+.text p{
+    font-size:15px ;
+    color: black;
+    font-weight: 400;
+    text-align: left;
+    height: 50px ;
+    width: 500px;
+    line-height: 3ch;
+  
+}
+.icon {
     width: 100%;
-    border-radius: 10px;
-     transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 244, 73);
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0,3s;
+
 }
-.facilities img:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
-    transform: scale(1.1);
+.icon:hover{
+transform: scale(1.1);
 }
-.facilities h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-}
+
 
 
 .S5{
@@ -313,4 +379,3 @@ body{
     margin-top: 20px;
     font-weight: 600;
 }
-
